@@ -1,6 +1,5 @@
 package org.vansh.controller;
 
-import org.vansh.service.EncodingService;
 import org.vansh.service.URLShortnerService;
 
 public class URLShortnerController {
