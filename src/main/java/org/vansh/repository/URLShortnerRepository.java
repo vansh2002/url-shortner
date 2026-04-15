@@ -5,9 +5,9 @@ import java.util.Map;
 
 public class URLShortnerRepository {
     private long ID = 1;
-    private Map<String, String> shortToLong = new HashMap<>();
+    private final Map<String, String> shortToLong = new HashMap<>();
 
-    public long getNextId() {
+    public synchronized long getNextId() {
         return ID++;
     }
 
